@@ -1,0 +1,11 @@
+{% extends '_layouts/content-simple.nunjucks' %}
+
+{% set title = 'Acne' %}
+{% set intro = 'Everybody can get acne. It’s simply to do with the way your skin works. If you’re worried about scars or your acne makes you unhappy, see a GP.' %}
+{% set nonEmergencyCallout = 'true' %}
+
+{% set link_list = { 'Check if you have acne': '#check', 'Things you can do yourself': '#yourself', 'Seeing a doctor about acne': '#doctor', 'Comparing medicines': '#medicines', 'What causes acne': '#causes', 'Finding help and support': '#help' } %}
+
+{% block main_content %}
+  {% markdown "acne/main-content.md" %}
+{% endblock %}
